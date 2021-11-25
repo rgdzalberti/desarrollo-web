@@ -13,24 +13,58 @@
             #description{
                 color: black;
                 text-align: center;
-                font-family: Ubuntu;
                 margin-top: -20px;
+                font-family: Ubuntu;
             }
             body{
                 background-image: linear-gradient(#aff5a8, #3edd7d);
                 background-repeat: no-repeat;
             }
+            .requiredCamps{
+                margin: auto;
+                margin-top: 100px;
+                height: 200px;
+                width: 50%;
+            }
+            .border{
+                border-color: black;
+            }
+            #survey-form{
+                text-align: center;
+                font-family: Ubuntu;
+                font-weight: 10;
+            }
+            .Ubuntu{
+                font-family: Ubuntu;
+                font-weight:  bold;
+            }
+            .biggerbox{
+                width: 100px;
+            }
+ 
         </style>  
     </head>
 
     <body>
         <h1 id="title">Survey project</h1>
         <p id="description">A few questions will be asked</p>
-        <form id="survey-form">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" value=""><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" value=""><br>
+
+        <div class="requiredCamps">
+            <fieldset class ="border">
+                <legend class="Ubuntu">Required Data</legend>
+        <form id="survey-form" >
+            <label id="name-label" for="name">Name:</label><br>
+            <input placeholder="Enter name" type="text" id="name"><br>
+            <label id="email-label" for="email">Email:</label><br>
+            <input placeholder="Enter email" type="email" id="email" ><br>
+            <label id="number-label" for="age">Age:</label><br>
+            <input class="biggerbox" placeholder="Enter age" type="number" min="18" max="120" id="number" value=""><br>
+            <label id="sex-label" for="text">Sex:</label><br>
+            <input type="dropdown" id="dropdown" ><br>
+            
         </form>
+    </fieldset>
+    </div>
+
     </body>
 </html>
