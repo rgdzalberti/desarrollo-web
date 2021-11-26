@@ -5,188 +5,116 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@300&display=swap');
-
+            
             #title{
-                color: black;
+                color: white;
                 text-align: center;
                 font-family: Roboto;
                 font-size: 35px;
+                padding-top: 5%;
             }
             #description{
-                color: black;
+                color: white;
                 text-align: center;
                 margin-top: -20px;
-                font-family: Ubuntu;
+                font-family: Ubuntu;   
             }
             body{
-                background-image: linear-gradient(#aff5a8, #3edd7d);
-                background-repeat: no-repeat;
+                background-image: rgb(92, 218, 142,0.9);
+                background-image: url(background.jpg);
+                background-color: #cccccc;
+        
             }
-            .border{
-                border-color: black;
-                height: 250px;
+            .fieldset{
+                border-color: white;
+                height: 600px;
                 width: 50%;
                 margin: auto;
-                margin-top: 100px;
+                margin-top: 20px;
+                background-image: linear-gradient(#58A6A6,#50b6b6) ;
+                border-radius: 5px;
                 
             }
-            .font{
-                font-family: Roboto;
+            .fontUbuntu{
+                font-family: Ubuntu;
             }
-            .fontb{
-                font-family: Roboto;
-                font-style: bold;
+            .fontUbuntuB{
+                font-family: Ubuntu;
+                font-weight: bold;
             }
-            .box1{
-                float:left;
-                height: 100%;
-                width: 30%;
-                margin-top: 2%;
-                margin-left: 2%;
-     
-            }
-            .vertical {
-                border-left: 3px solid black;
-                height: 100%;
-                float:left;
-            }
-            #name-label{
-                display:flex;
-                flex-direction: row;
-                float: left;
-            }
-            .space{
-                
-                margin-bottom: 10px;
+            .fontUbuntuBW{
+                font-family: Ubuntu;
+                font-weight: bold;
+                color: white;
             }
             .rcorner
             {
              border-radius: 5px;
              background: white;
             }
-            .biggerbox{
-                width: 80px;
-            }
-            .box2{
-                float:left;
-                width: 30%;
-                margin-left: 10px;
-            }
-            .horizontal{
-                width: 90%;
-                color: black;
-                margin-right: 7%;
-                background-color: black;
-
-            }
-            .leftspace{
-                padding-left: 5%;
-            }
-            .textarea{
-                resize:none;
-                width: 100%;
-                height: 100px;
-            }
-            .box3{
-                float:right;
-                width: 35%;
-                margin-left: -10%;
-                margin-right: auto;
-            
-            }
-            .centertext{
+            #survey-form{
                 text-align: center;
-                margin: auto;
+                margin-top: 5%;
             }
-            .centerbutton{
-                margin-left: 30%;
+            .space{
+                margin-top: 2%;
             }
         </style>
     </head>
-
-      <body>
-
+    <body> 
         <h1 id="title">Survey project</h1>
         <p id="description">A few questions will be asked</p>
 
-        <div class="boxes">
+        <fieldset class ="fieldset">
+        <legend class="fontUbuntuBW">Required Data</legend>
+        <form id="survey-form" class="fontUbuntu" >
+            <div class="space"></div>
+            <label id="name-label" for="name">Name: </label>
+            <input placeholder="Enter name" type="text" id="name" class="rcorner"><br>
+            <div class="space"></div>
+            <label id="email-label" for="email">Email: </label>
+            <input placeholder="Enter email" type="email" id="email" class="rcorner" ><br>
+            <div class="space"></div>
+            <label id="number-label" for="age">Age:</label>
+            <input class="biggerbox rcorner" placeholder="Enter age" type="number" min="18" max="120" id="number" value="" ><br>
+            <div class="space"></div>
+            <label id="sex-label" for="text">Sex:</label>
+            <select name="sex" id="dropdown" class="rcorner">
+                <option value="" selected disabled hidden>Choose</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>    
+              </select>         
 
-        <fieldset class ="border fontb">
-        <legend class="font">Required Data</legend>
+              <p class="UbuntuCenter">Please select your favorite Web language:</p>
+              <div>            
+              <input type="radio" id="name" name="fav_language" value="HTML">
+              <label for="html">HTML</label><br>
+              <input type="radio" id="name" name="fav_language" value="CSS">
+              <label for="css">CSS</label><br>
+              <input type="radio" id="name" name="fav_language" value="JavaScript">
+              <label for="javascript">JavaScript</label>
+              </div>
+              <div class="space"></div>
+              
+              <div class="checkbox">
+                  <label>
+                      <p>Select feauter</p>
+                      <div class="leftspace">
+                      <input type="checkbox" id="cbox1" value="first_checkbox"> Este es mi </label><br>
+                      <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Este es mi </label>    
+                  </div>
+                  <br> 
 
-        
-
-        <div class="box1">           
-            <form id="survey-form" >
-                <div class="space"></div>
-                <label id="name-label" for="name">Name: </label>
-                <input placeholder="Enter name" type="text" id="name" class="rcorner"><br>
-                <div class="space"></div>
-                <label id="email-label" for="email">Email: </label>
-                <input placeholder="Enter email" type="email" id="email" class="rcorner" ><br>
-                <div class="space"></div>
-                <label id="number-label" for="age">Age:</label>
-                <input class="biggerbox rcorner" placeholder="Enter age" type="number" min="18" max="120" id="number" value="" ><br>
-                <div class="space"></div>
-                <label id="sex-label" for="text">Sex:</label>
-                <select name="sex" id="dropdown" class="rcorner">
-                    <option value="" selected disabled hidden>Choose</option>
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                    <option value="other">Other</option>    
-                  </select>         
-             </form>
-            </div>
-
-            <div class= "vertical"></div>
-
-            
-            <div class="box2">
-                <form class="font">
-                    <p class="UbuntuCenter">Please select your favorite Web language:</p>
-                    <div>            
-                    <input type="radio" id="name" name="fav_language" value="HTML">
-                    <label for="html">HTML</label><br>
-                    <input type="radio" id="name" name="fav_language" value="CSS">
-                    <label for="css">CSS</label><br>
-                    <input type="radio" id="name" name="fav_language" value="JavaScript">
-                    <label for="javascript">JavaScript</label>
-                    </div>
-                    <div class="space"></div>
-                    <hr class="horizontal">
-                    <div class="checkbox">
-                        <label>
-                            <p>Select feauter</p>
-                            <div class="leftspace">
-                            <input type="checkbox" id="cbox1" value="first_checkbox"> Este es mi </label><br>
-                            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Este es mi </label>    
-                        </div>
-                        <br> 
-                    </form>
-                </div>
-                </div>
-
-                <div class= "vertical"></div>
-
-                <div class="box3" >
-                    <form>
+                  <form>
                     <p class="centertext">Send feedback</p>
                     <textarea class="textarea" placeholder="Write something..."></textarea>
                     <div class="cntr">
                     <p><input type="submit" value="Enviar datos" class="centerbutton"></p>
                     </div>
                 </form>
-                </div>
-                
-           
-
-            
-
-        </fieldset>
-
-    </div>
-
-                
-      </body>
+         </form>
+    </body>
+  
      
 </html>
