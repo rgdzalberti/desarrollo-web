@@ -20,23 +20,24 @@
                 font-family: Ubuntu;   
             }
             body{
-                background-image: rgb(92, 218, 142,0.9);
                 background-image: url(background.jpg);
-                background-color: #cccccc;
+                background-blend-mode: multiply;
+                background-color: #ecc19c;
         
             }
             .fieldset{
                 border-color: white;
-                height: 600px;
+                height: 100%;
                 width: 50%;
                 margin: auto;
                 margin-top: 20px;
-                background-image: linear-gradient(#58A6A6,#50b6b6) ;
+                background-image: linear-gradient(#296464,#26495c) ;
                 border-radius: 5px;
                 
             }
             .fontUbuntu{
                 font-family: Ubuntu;
+                color: white;
             }
             .fontUbuntuB{
                 font-family: Ubuntu;
@@ -51,6 +52,7 @@
             {
              border-radius: 5px;
              background: white;
+             border-color: white;
             }
             #survey-form{
                 text-align: center;
@@ -59,6 +61,42 @@
             .space{
                 margin-top: 2%;
             }
+            .size{
+                width: 90%;
+                height: 25px;
+                margin-bottom: 20px;
+            }
+            .left
+            {
+                margin-left: -85%;
+            }
+            .leftside{
+                text-align: left;
+                margin-left: 5%;
+                
+            }
+            .textarea{
+                resize: none;
+                width: 95%;
+                height: 80px;
+                border-radius: 5px;
+                margin-top: -10px;
+            }
+            .margintop{
+                margin-top: 30px;
+                margin-bottom: 5px;
+            }
+            .B{
+                font-weight: bold;
+            }
+            .sumbitbutton{
+                width: 96%;
+                height: 40px;
+                border-radius: 5px;
+                border-color: white;
+                font-family: Ubuntu;   
+            }
+
         </style>
     </head>
     <body> 
@@ -68,26 +106,22 @@
         <fieldset class ="fieldset">
         <legend class="fontUbuntuBW">Required Data</legend>
         <form id="survey-form" class="fontUbuntu" >
-            <div class="space"></div>
-            <label id="name-label" for="name">Name: </label>
-            <input placeholder="Enter name" type="text" id="name" class="rcorner"><br>
-            <div class="space"></div>
-            <label id="email-label" for="email">Email: </label>
-            <input placeholder="Enter email" type="email" id="email" class="rcorner" ><br>
-            <div class="space"></div>
-            <label id="number-label" for="age">Age:</label>
-            <input class="biggerbox rcorner" placeholder="Enter age" type="number" min="18" max="120" id="number" value="" ><br>
-            <div class="space"></div>
-            <label id="sex-label" for="text">Sex:</label>
-            <select name="sex" id="dropdown" class="rcorner">
+            <label id="name-label" for="name" class="left B" >Name </label><br>
+            <input placeholder="Enter name" type="text" id="name" class="rcorner size" required><br>
+            <label id="email-label" for="email" class="left B">Email </label><br>
+            <input placeholder="Enter email" type="email" id="email" class="rcorner size" required><br>
+            <label id="number-label" for="age" class="left B">Age</label><br>
+            <input class="biggerbox rcorner size" placeholder="Enter age" type="number" min="18" max="120" id="number" value="" ><br>
+            <label id="sex-label" for="text" class="left B">Sex</label><br>
+            <select name="sex" id="dropdown" class="rcorner size">
                 <option value="" selected disabled hidden>Choose</option>
                 <option value="female">Female</option>
                 <option value="male">Male</option>
                 <option value="other">Other</option>    
               </select>         
 
-              <p class="UbuntuCenter">Please select your favorite Web language:</p>
-              <div>            
+              <p class="UbuntuBW leftside margintop B">Please select your favorite Web language:</p>
+              <div class="leftside">            
               <input type="radio" id="name" name="fav_language" value="HTML">
               <label for="html">HTML</label><br>
               <input type="radio" id="name" name="fav_language" value="CSS">
@@ -97,20 +131,21 @@
               </div>
               <div class="space"></div>
               
-              <div class="checkbox">
+              <div class="UbuntuBW leftside">
                   <label>
-                      <p>Select feauter</p>
+                      <p class="margintop B">This page is:</p>
                       <div class="leftspace">
-                      <input type="checkbox" id="cbox1" value="first_checkbox"> Este es mi </label><br>
-                      <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Este es mi </label>    
+                      <input type="checkbox" id="cbox1" value="first_checkbox"> Cool </label><br>
+                      <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Awesome </label> <br>
+                      <input type="checkbox" id="cbox3" value="third_checkbox"> <label for="cbox2">Interesting </label><br>     
                   </div>
                   <br> 
 
                   <form>
-                    <p class="centertext">Send feedback</p>
+                    <p class="centertext B">Send feedback</p>
                     <textarea class="textarea" placeholder="Write something..."></textarea>
                     <div class="cntr">
-                    <p><input type="submit" value="Enviar datos" class="centerbutton"></p>
+                    <p><input type="submit" id="submit" value="Enviar datos" class="sumbitbutton"></p>
                     </div>
                 </form>
          </form>
