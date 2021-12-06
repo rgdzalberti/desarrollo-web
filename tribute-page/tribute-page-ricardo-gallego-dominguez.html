@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html style="height: fit-content;">
 
 <head> 
 
@@ -15,21 +15,24 @@
  
         }
         body{
-            background: linear-gradient(200deg,#402565, #30BE96);
+            background: linear-gradient(200deg,#353535, #0e0e0e);
             background-repeat: no-repeat;
             margin: 0; 
             padding: 0;
             size: 100%;
+            height: fit-content;
         }
         #img-div{
             width: 390px;
             height: auto;
             margin-top:10px;
-            margin-left: 10%;
+            
         }
         #image{
-            border-radius: 15px;
+            border-radius: 10px;
             border: 2px solid white;
+            max-width: 100%;
+            display: block;
         }
         #img-caption{
             margin-top:0px;
@@ -37,18 +40,41 @@
             text-align: center;
         }
         #tribute-info{
-            height: 140px;
+            height: 75px;
             position: relative;
             margin-left: 100px;
-            margin-top: 65px;
+            margin-top: auto;
+            margin-bottom: auto;
             width: 300px;
             color: white;
+            font-style: italic;
+            overflow:auto
         }
         .box{
-            height: 90%;
-            margin-top: 100px;
             display: flex;
-            
+            margin: 0 auto;
+            margin-top: 100px;
+            text-align: justify;
+            justify-content: center;
+        }
+
+        .textblock{
+            width: 100%;
+            height:fit-content;
+            text-align: center;
+            background-color: rgb(255, 255, 255, 0.3);
+            color: white;
+        }
+        .effects{
+            font-weight: bold;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: large;
+            text-decoration: underline;
+        }
+        .effects:hover{
+            color:blue;
         }
         
     </style>
@@ -63,17 +89,54 @@
     <div class="box">
 
     <div id="img-div">
+        <figure id="img-div">
         <img id="image" src="https://imgur.com/Utk8USi.png" alt="Girl in a jacket">
+    </figure>
         <p  id="img-caption">-Juan Carlos Aragón "El capitán veneno"</p>
     </div>
 
     <div id="tribute-info">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-    </div>
-    toca el 7
+        «Me han dicho que la locura es una enfermedad tan típica de Cádiz que los gaditanos que no la padecen nunca van al cielo»</div>
+
     </div>
 
-</div>
+    <div class="textblock">
+        <a target="_blank" id="tribute-link"  href="https://www.youtube.com/watch?v=rKgdWQiKTAA"><p class="effects">Aunque diga Blas Infante</p></a>
+    <p> Aunque diga Blas Infante</p>
+    <p>"andaluces levantaos",</p>
+    <p>perdón que no me levante,</p>
+    <p>pero estoy mejor 'sentao'.</p>
+    <p>Bueno 'vía' poner de pie.</p>
+    <p>'Vía' dejar de tonterías</p>
+    <p>Venga una, dos y tres:</p>
+    <p>Qué bonita Andalucía.</p>
+    <p>Venga vamos a ponernos serios,</p>
+    <p>que vamos a cantar el himno.</p>
+    <p>Los andaluces queremos</p>
+    <p>volver a ser lo que fuimos.</p>
+    <p>Lo que fuimos antiguamente,</p>
+    <p>pobrecitos y vasallos,</p>
+    <p>siervos de terratenientes</p>
+    <p>y de chulos a caballo.</p>
+    <p>Si este pueblo se disparata</p>
+    <p>con la boda de un mata-vacas</p>
+    <p>y la niña de una duquesa,</p>
+    <p>si este pueblo se le arrodilla</p>
+    <p>a una espada y a una mantilla,</p>
+    <p>este pueblo me da vergüenza.</p>
+    <p>Menos rollos de verdes mares,</p>
+    <p>de campiñas y de olivares.</p>
+    <p>Que así luego nos luce el pelo,</p>
+    <p>casta.</p>
+    <p>Después te ponen las series de Emilio Aragón,</p>
+    <p>pim, pom,</p>
+    <p>con sus castas</p>
+    <p>y aparece en el más ínfimo escalón</p>
+    <p>de su estrecha jerarquía,</p>
+    <p>el servilismo mamón</p>
+    <p>de las marmotas de Andalucía</p>
+    </div>
+    </div>
 
 </body>
 </html>
