@@ -1,0 +1,111 @@
+<html>
+
+<!-- stories 14 y 15 -->
+
+<head>
+<title> Technical Documentation Page </title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Readex+Pro&display=swap');
+
+    body {
+        background: linear-gradient(90deg, rgba(159,204,224,1) 0%, rgba(255,255,255,1) 100%)
+    }
+
+    header{
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: Mukta !important;
+        margin-bottom: -20px;
+    }
+    .Negrita{
+        font-weight: bold;
+    }
+    code{
+        background-color: rgb(207, 204, 204);
+    }
+    .italic{font-style: italic;}
+    main {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    .Flexbox{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .leftbox{
+        margin-right: 20px;
+        text-align: center;
+        background: hsla(0, 0, 0, 150);
+    }
+    .rightbox{
+        
+    }
+    .less{font-size: 20px;}
+    .getrid{
+        list-style-type: none;
+        
+        }
+        .chinchen{
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+        }
+</style>
+</head>
+
+
+<body>
+
+    <div class="Flexbox">
+    <div class="rightbox">
+
+<main id="main-doc">
+
+<section class="main-section" id="Introducción"><header>Introducción</header>
+    <p>Para entender los siguientes contenidos debemos partir de la propia definición de un lenguaje de programación: </p>
+    <p>Un <span class="Negrita">lenguaje de programación</span> es un lenguaje formal (o artificial, es decir, un lenguaje con reglas gramaticales bien definidas) que le proporciona a una persona, en este caso el programador, la capacidad de escribir (o programar) una serie de instrucciones o secuencias de órdenes en forma de algoritmos con el fin de controlar el comportamiento físico o lógico de un sistema informático, de manera que se puedan obtener diversas clases de datos o ejecutar determinadas tareas. A todo este conjunto de órdenes escritas mediante un lenguaje de programación se le denomina programa informático.</p></section>
+<section class="main-section" id="Ejemplos"><header>Ejemplos</header>
+    <p>Hay distintas formas de programar según el lenguaje. Algunos lenguajes de ejemplo:</p>
+<ul>
+    <li>Kotlin</li>
+    <li>Python</li>
+    <li>Java</li>
+    <li>C++</li>
+    <li>Rust</li>
+</ul>
+</section>
+<section class="main-section" id="Descripciones"><header>Descripciones</header>
+    <p>Una breve descripción de cada lenguaje junto a su <span class="italic">Hello World</span></p>
+    <p><span class="Negrita">Kotlin</span> es un lenguaje de programación de tipado estático que corre sobre la máquina virtual de Java y que también puede ser compilado a código fuente de JavaScript. </p>
+    <code>fun main(args: Array<String>) {println("Hello, World!")}</code>
+    <p><span class="Negrita">Python</span> es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. </p>
+    <code> print('Hello, world!')</code>
+    <p><span class="Negrita">Java</span> es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por Sun Microsystems. Hay muchas aplicaciones y sitios web que no funcionarán, probablemente, a menos que tengan Java instalado, y cada día se crean más. Java es rápido, seguro y fiable.</p>
+    <code>class HelloWorld {public static void main(String[] args) { System.out.println("Hello, World!"); } }</code>
+    <p><span class="Negrita">C++</span> es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, C++ es un lenguaje híbrido.</p>
+    <code>#include <iostream>; int main() {std::cout << "Hello World!";return 0; }</code>
+    <p><span class="Negrita"> Rust</span> es un lenguaje de programación compilado, de propósito general y multiparadigma que está siendo desarrollado por Mozilla.​ Ha sido diseñado para ser "un lenguaje seguro, concurrente y práctico".​​</p>
+    <code>$ rustc hello.rs</code></section>
+   
+<section class="main-section" id="header"><header>Introduction</header>
+    <p>La informática evoluciona cada día y si te quieres dedicar a ello deberás de mantenerte a su ritmo. Para ello te recomendamos estos portales de información:</p>
+    <p><a href="https://www.xataka.com/">-Xataka</a></p>
+    <p><a href="https://hipertextual.com/">-Hipertextual</a></p>
+    <p><a href="https://es.gizmodo.com/">-Gizmodo</a></p></section>
+</main>
+</div>
+<div class="leftbox" >
+<nav class="menu" id="navbar">
+<header class="less">Documentación</header>
+    <ul class="chinchen">
+      <li class="getrid"><a href="#Introducción" class="nav-link">Introducción</a></li>
+      <li class="getrid"><a href="#Ejemplos" class="nav-link">Ejemplos</a></li>
+      <li class="getrid"><a href="#Descripciones" class="nav-link">Descripciones</a></li>
+      <li class="getrid"><a href="#introduction" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+</body>
+
+
+</html>
