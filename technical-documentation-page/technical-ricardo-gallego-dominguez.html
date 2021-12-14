@@ -9,8 +9,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Readex+Pro&display=swap');
 
     body {
-        background: linear-gradient(90deg, rgba(159,204,224,1) 0%, rgba(255,255,255,1) 100%)
+        background-color: #8EE4AF;
     }
+    html, body {margin: 0; padding: 0;}
 
     header{
         font-size: 30px;
@@ -34,20 +35,59 @@
         margin-right: 20px;
         text-align: center;
         background: hsla(0, 0, 0, 150);
+        background-color: #5CDB95;
+        padding-left: 10px;
+        padding-right: 10px;
+        
     }
     .rightbox{
         
     }
-    .less{font-size: 20px;}
+    .less{font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;}
     .getrid{
         list-style-type: none;
         
         }
-        .chinchen{
+    .chinchen{
             margin: 0;
             padding: 0;
             margin-top: 20px;
+    }
+    hr {  
+        border: 1px solid #05386B;
+        border-radius: 5px;
+        margin: 0%;
         }
+    .separator{
+        padding: 30px 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        width: 100%;
+    }
+    .separator:hover{
+        background-color: #379683;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        }
+        .vl {
+  border-left: 3px solid #05386B;
+  height: 500px;
+  margin-right: 10px;
+  margin-left: -20;
+ height: auto;
+}
+@media div and (min-width: 600px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+.bluehover:hover{color: #05386B;}
+header {color: #05386B}
+
 </style>
 </head>
 
@@ -85,25 +125,38 @@
     <p><span class="Negrita"> Rust</span> es un lenguaje de programación compilado, de propósito general y multiparadigma que está siendo desarrollado por Mozilla.​ Ha sido diseñado para ser "un lenguaje seguro, concurrente y práctico".​​</p>
     <code>$ rustc hello.rs</code></section>
    
-<section class="main-section" id="header"><header>Introduction</header>
+<section class="main-section" id="Portales"><header>Portales</header>
     <p>La informática evoluciona cada día y si te quieres dedicar a ello deberás de mantenerte a su ritmo. Para ello te recomendamos estos portales de información:</p>
-    <p><a href="https://www.xataka.com/">-Xataka</a></p>
-    <p><a href="https://hipertextual.com/">-Hipertextual</a></p>
-    <p><a href="https://es.gizmodo.com/">-Gizmodo</a></p></section>
-</main>
+    <p><a class="bluehover" href="https://www.xataka.com/">-Xataka</a></p>
+    <p><a class="bluehover" href="https://hipertextual.com/">-Hipertextual</a></p>
+    <p><a class="bluehover" href="https://es.gizmodo.com/">-Gizmodo</a></p></section>
+
+    <section class="main-section" id="Redes"><header>Redes</header>
+    <p><a class="bluehover" href="https://twitter.com/home">Twitter</a></p>
+    <p><a class="bluehover" href="https://instagram.com">Instagram</a></p></section>
+
+
 </div>
-<div class="leftbox" >
+<div class="vl"></div>
+<div  class="leftbox" >
 <nav class="menu" id="navbar">
-<header class="less">Documentación</header>
+<header  class="less">Documentación</header>
     <ul class="chinchen">
-      <li class="getrid"><a href="#Introducción" class="nav-link">Introducción</a></li>
-      <li class="getrid"><a href="#Ejemplos" class="nav-link">Ejemplos</a></li>
-      <li class="getrid"><a href="#Descripciones" class="nav-link">Descripciones</a></li>
-      <li class="getrid"><a href="#introduction" class="nav-link">Contacto</a></li>
+      <hr>
+      <div onclick="location.href='#Introducción'"; class="separator" ><li class="getrid"><a href="#Introducción" class="nav-link">Introducción</a></li></div>
+      <hr>
+      <div onclick="location.href='#Ejemplos'"; class="separator"><li class="getrid"><a href="#Ejemplos" class="nav-link">Ejemplos</a></li></div>
+      <hr>
+      <div onclick="location.href='#Descripciones'"; class="separator"><li class="getrid"><a href="#Descripciones" class="nav-link">Descripciones</a></li></div>
+      <hr>
+      <div onclick="location.href='#Portales'"; class="separator"><li class="getrid"><a href="#Portales" class="nav-link">Portales</a></li></div>
+      <hr>
+      <div onclick="location.href='#Redes'"; class="separator"><li class="getrid"><a href="#Redes" class="nav-link">Redes</a></li></div>
     </ul>
   </nav>
 </div>
 </div>
+</main>
 
 </body>
 
