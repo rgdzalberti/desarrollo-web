@@ -1,125 +1,122 @@
 <html>
+    <head>
 
-<head>
-<title> Ricardo Portfolio </title>
+        <style>
+            html,body{height: 0;padding: 0;}
+            body{        
+                size: 100%; 
+                background-image: url('background.jpg');
+                background-size: 1500px auto;
+                
 
-<style>
-    body{
-        size: 100%; 
-        background-image: url('background.jpg');
-        background-size: 1280px auto
-    }
-    html,body{margin:0;padding:0;}
-    .container{
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 0;
-         bottom: 0;
-        left: 0;
-         width: 80%;
-         height: 80%;
-        background-color: red;
-    }
-    .topfooter{
-        background-color: pink;
-        height: 10%;
-    }
-    .flexbox{
-        display: flex;
-        flex-direction: row;
-        height:100%;
-        width: 100%;
-        background-color: white;
-    }
-    .leftbox{
-        background-color: blue;
-        width: 50%;
-        height: 100%;
-    }
-    .rightbox{
-        background-color: green;
-        width:50%;
-        height:100%;
-    }
+            }
+            .container{
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 80%;
+                height: 80%;
+                
+            }
+            .topFooter{
+                height: 10%;
+                background-color: #FFD2BF;
+                width: 100%;
+            }
+            .Flexbox{
+                display: flex;
+                flex-direction: row;
+                height: 90%;
+                width: 100%;
+            }
+            .leftbox{
+                background-color: #ED1849;
+                width:47.5% ;
+                height: 100%;
+            }
+            .rightbox{
+                background-color: #FFFFFF;
+                width: 47.5%;
+                height: 100%;
+            }
+            .Bar{
+                background-color: #86F9D5;
+                width: 5%;
 
-    .rightbar{
-        background-color: yellow;
-    }
+            }
+            .Verticaldiv{
+                height: 25%;
+                
+            }
+            .Vertical{
+                writing-mode: vertical-lr;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 58px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .Vertical:hover{
+                background-color: #53c9a4;
+            }
+            .centerContent{
+                display: block;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .Socialdiv{
+                height: 10.5%;
+                padding-top: 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                
+            }
 
-    .nav{
-        background-color: grey;
-        width: 6%;
-        height: 100%;
-        white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
+            
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="Container">
+
+            <div class="topFooter">lorem ipsum</div>
         
-    }
-    .subcontainer{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 90%;
-        background-color: purple;
-    }
-    .leftsupercontainer{
-        width: 100%;
-        height: 100%;
-    }
-    .rightsupercontainer{
-        width: 5%;
-        height: 100%;
-    }
-    .rotar{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100%;
-        text-align: center;
-        writing-mode: vertical-lr;
+            <div class="Flexbox">
+                <div class="leftbox">a</div>
+                <div class="rightbox">a</div>
+
+                <div class="Bar">
+                 <div  class="Verticaldiv"><span class="Vertical">Inicio</p></div>
+                 <div  class="Verticaldiv"><span class="Vertical">Proyectos</p></div>
+                 <div  class="Verticaldiv"><span class="Vertical">Contacto</p></div>
+
+                    <div class="Socialdiv">
+                        <a  href="https://www.instagram.com/ricardogdz/" target="_blank" >
+                           <img class="centerContent" src="instagram.png" alt="InstagramLogo" width="35" height="auto">
+                            </a>
+                           </div>
+
+                           <div class="Socialdiv">
+                            <a  href="https://twitter.com/ricardogdz_" target="_blank" >
+                               <img class="centerContent" src="twitter.png" alt="TwitterLogo" width="35" height="auto">
+                                </a>
+                               </div>
+
+                </div>
+            </div>
         
-    }
-    .espacio{background-color: brown;}
+                 
 
+        </div>
 
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="topfooter">hooooo</div>
-
-<div class="subcontainer">
-
-    <div class="leftsupercontainer">
-
-<div class="flexbox">
-    <div class="leftbox">aaa</div>
-    <div class="rightbox">aa</div>
-    <div class="nav"> 
-        <p class="rotar">Inicio</p>
-        <p class="rotar">Proyectos</p>
-        <p class="rotar">Contacto</p>
-        <p >Twitter placeholder</p>
-        <p >Instagram placeholder</p>
-    </div>
-</div>
-    </div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-</body>
-
+    </body>
 </html>
