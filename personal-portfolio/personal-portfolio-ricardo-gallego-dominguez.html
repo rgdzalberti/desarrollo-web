@@ -2,12 +2,14 @@
     <head>
 
         <style>
-            html,body{height: 0;padding: 0;}
+            @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+            html,body{height: 0;padding: 0;font-family: 'Nunito', sans-serif;}
             body{        
                 size: 100%; 
                 background-image: url('background.jpg');
-                background-size: 1500px auto;
-                
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: #add0ec;
 
             }
             .container{
@@ -36,6 +38,7 @@
                 background-color: #ED1849;
                 width:47.5% ;
                 height: 100%;
+                
             }
             .rightbox{
                 background-color: #FFFFFF;
@@ -45,7 +48,9 @@
             .Bar{
                 background-color: #86F9D5;
                 width: 5%;
-
+                overflow: hidden;
+                white-space: nowrap;
+                cursor:pointer;
             }
             .Verticaldiv{
                 height: 25%;
@@ -62,7 +67,7 @@
                 text-overflow: ellipsis;
             }
             .Vertical:hover{
-                background-color: #53c9a4;
+                background-color: #5DA2D5;
             }
             .centerContent{
                 display: block;
@@ -73,14 +78,38 @@
             .Socialdiv{
                 height: 10.5%;
                 padding-top: 10px;
+                width: 100%;
                 overflow: hidden;
                 white-space: nowrap;
                 
             }
+            .important{
+                background-color: #5DA2D5;
+            }
+            .footerclass{
+                font-weight: bold;
+                padding-left: 1%;
+                height: 100%;
+                line-height:300%;
+                
+            }
+            .currenthover:hover{
+                background-color: #358ccc;
+            }
+            .leftphoto{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                
+            }
+
 
             
 
         </style>
+
+        <title>Ricardo Gallego Dom&#205nguez Portf</title>
 
     </head>
 
@@ -88,17 +117,20 @@
 
         <div class="Container">
 
-            <div class="topFooter">lorem ipsum</div>
+            <div class="topFooter"><p class="Footerclass">Ricardo Gallego Domínguez's Portfolio</p></div>
         
             <div class="Flexbox">
-                <div class="leftbox">a</div>
+                <div class="leftbox">
+                    <img class="leftphoto" src="foto.png" width="50%" height="auto">
+                </div>
                 <div class="rightbox">a</div>
 
                 <div class="Bar">
-                 <div  class="Verticaldiv"><span class="Vertical">Inicio</p></div>
-                 <div  class="Verticaldiv"><span class="Vertical">Proyectos</p></div>
-                 <div  class="Verticaldiv"><span class="Vertical">Contacto</p></div>
+                 <div  class="Verticaldiv important"><span class="Vertical currenthover">Inicio</span></div>
+                 <div  class="Verticaldiv"><span class="Vertical">Proyectos</span></div>
+                 <div  class="Verticaldiv"><span class="Vertical">Contacto</span></div>
 
+                    
                     <div class="Socialdiv">
                         <a  href="https://www.instagram.com/ricardogdz/" target="_blank" >
                            <img class="centerContent" src="instagram.png" alt="InstagramLogo" width="35" height="auto">
@@ -107,10 +139,10 @@
 
                            <div class="Socialdiv">
                             <a  href="https://twitter.com/ricardogdz_" target="_blank" >
-                               <img class="centerContent" src="twitter.png" alt="TwitterLogo" width="35" height="auto">
+                               <img class="centerContent" src="twitter.png" alt="TwitterLogo" width="100%" height="auto">
                                 </a>
                                </div>
-
+                        
                 </div>
             </div>
         
